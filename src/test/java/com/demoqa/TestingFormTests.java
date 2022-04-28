@@ -10,6 +10,7 @@ import static com.codeborne.selenide.Selenide.*;
 
 public class TestingFormTests {
 
+
     @Test
     void fillFormTest () {
         open("https://demoqa.com/automation-practice-form");
