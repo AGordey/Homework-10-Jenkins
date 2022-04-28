@@ -20,7 +20,7 @@ public class TestingFormTests {
     @Test
     void fillFormTest() {
         step("Open form on site", () -> {
-            open("https://demoqa.com/automation-practice-form");
+            open("/automation-practice-form");
             executeJavaScript("$('footer').remove()");
             executeJavaScript("$('#fixedban').remove()");
         });
