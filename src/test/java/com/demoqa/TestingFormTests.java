@@ -12,7 +12,6 @@ import static io.qameta.allure.Allure.step;
 public class TestingFormTests {
     @BeforeAll
     static void setUp() {
-
         Configuration.baseUrl = "https://demoqa.com";
         Configuration.remote = "https://user1:1234@selenoid.autotests.cloud/wd/hub";
         Configuration.browserSize = "1920x1080";
