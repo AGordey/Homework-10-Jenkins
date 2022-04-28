@@ -1,7 +1,6 @@
 package com.demoqa;
 
 import com.codeborne.selenide.Configuration;
-import io.qameta.allure.Step;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
@@ -11,6 +10,13 @@ import static com.codeborne.selenide.Selenide.*;
 import static io.qameta.allure.Allure.step;
 
 public class TestingFormTests {
+    @BeforeAll
+    static void setUp() {
+
+        Configuration.baseUrl = "https://demoqa.com";
+        Configuration.remote = "https://user1:1234@selenoid.autotests.cloud/wd/hub";
+        Configuration.browserSize = "1920x1080";
+    }
 
     @Test
     void fillFormTest() {
