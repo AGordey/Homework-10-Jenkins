@@ -10,15 +10,9 @@ import static com.codeborne.selenide.Selenide.*;
 
 public class TestingFormTests {
 
-    @BeforeAll
-    static void setUp() {
-        Configuration.baseUrl = "https://demoqa.com";
-        Configuration.browserSize = "1920x1080";
-    }
-
     @Test
     void fillFormTest () {
-        open("/automation-practice-form");
+        open("https://demoqa.com/automation-practice-form");
         executeJavaScript("$('footer').remove()");
         executeJavaScript("$('#fixedban').remove()");
 
