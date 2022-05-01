@@ -41,7 +41,7 @@ public class TestingFormTests extends TestBase {
         });
         step("Fill form ", () -> {
             $("#firstName").setValue("OurFirstName");
-            $("#lastName").setValue("OurLastNameTest");
+            $("#lastName").setValue("OurLastName");
             $("#userEmail").setValue("OurEmail@email.com");
             $("#userNumber").setValue("1234567890");
             $("#currentAddress").setValue("OurCurrentAddress");
