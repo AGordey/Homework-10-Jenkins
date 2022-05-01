@@ -95,5 +95,6 @@ public class TestingFormTests {
         Attach.pageSource();
         Attach.browserConsoleLogs();
         Attach.addVideo();
+        closeWebDriver();
     }
 }
